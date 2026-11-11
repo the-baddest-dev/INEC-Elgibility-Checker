@@ -9,7 +9,7 @@ function check() {
   }
 
   if (birthYear.length != 4){
-    displayArea.innerHTML = `<p>Invalid year of birth. Enter 4 digit</p>`
+    displayArea.innerHTML = `<p>Invalid year of birth. Enter 4 digits!</p>`
     return;
   }
   

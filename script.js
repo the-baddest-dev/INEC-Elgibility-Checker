@@ -18,13 +18,13 @@ function check() {
   let age = currentYear - Number(birthYear)
   
   if (isNaN(Number(birthYear))){
-    displayArea.innerHTML = `<p>Do not input text!</p>`
+    displayArea.innerHTML = `<p>Input numbers!</p>`
     return
   }
 
   if (age >= 18) {
-    displayArea.innerHTML = `<p>You are eligible to vote</p>`
+    displayArea.innerHTML = `<p>You are eligible to vote!</p>`
   } else if (age < 18) {
-    displayArea.innerHTML = `<p>You are not eligible to vote. Come back in ${18 - age} years</p>`
+    displayArea.innerHTML = `<p>You are not eligible to vote. Come back in ${18 - age} years!</p>`
   }
 }

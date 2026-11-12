@@ -8,8 +8,8 @@ function check() {
     alert('input should not be empty')
   }
 
-  if (birthYear.length != 4){
-    displayArea.innerHTML = `<p>Invalid year of birth. Enter 4 digits!</p>`
+  if (birthYear.length != 4 || birthYear>currentYear){
+    displayArea.innerHTML = `<p>Invalid year of birth!</p>`
     return;
   }
   
